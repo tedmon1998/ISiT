@@ -1,0 +1,3 @@
+"G:\CLion 2021.2.1\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\CG_P333.dir/objects.a
+G:\MSYS64\mingw64\bin\ar.exe cr CMakeFiles\CG_P333.dir/objects.a @CMakeFiles\CG_P333.dir\objects1.rsp
+G:\MSYS64\mingw64\bin\gcc.exe -g -Wl,--whole-archive CMakeFiles\CG_P333.dir/objects.a -Wl,--no-whole-archive -o CG_P333.exe -Wl,--out-implib,libCG_P333.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\CG_P333.dir\linklibs.rsp

@@ -1,0 +1,3 @@
+E:/HW/3_course/Computer graphics/5/CG_P5/cmake-build-debug/CMakeFiles/CG_P5.dir
+E:/HW/3_course/Computer graphics/5/CG_P5/cmake-build-debug/CMakeFiles/edit_cache.dir
+E:/HW/3_course/Computer graphics/5/CG_P5/cmake-build-debug/CMakeFiles/rebuild_cache.dir

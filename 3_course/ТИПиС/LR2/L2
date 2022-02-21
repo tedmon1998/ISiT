@@ -1,0 +1,86 @@
+'''import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+#%matplotlib inline
+import networkx as nx
+dt=pd.read_excel('eng_rat.xlsx') # for rat test with words in G
+print(dt)
+dt.head(10)
+dt[2:5]
+dt.iloc[1:5, 0:4]
+dt[['Word1', 'Word2', 'Word3','Answer','15s_acc']].head()
+dt['15s_acc'].hist(bins = 30)
+plt.xlabel(' accuracy 15 sec', fontsize=14)
+dt['15s_st'].hist(bins = 30)
+plt.xlabel(' accuracy 15 sec', fontsize=14)
+plt.scatter(dt['15s_acc'],dt['15s_st'])
+plt.xlabel(' accuracy 15 sec', fontsize=14)
+plt.ylabel(' answer time', fontsize=14)
+y=[]
+for row in dt.itertuples(): # Iterate over DataFrame
+    acc=row._9
+    if(acc<=32.0): y.append(0)
+    else: 
+        if(acc<=64.0): y.append(1)
+        else: y.append(2)
+dt['Comp']=y 
+
+dt.head()
+acc,err_acc=[],[]
+mst,err_st=[],[]
+for c in [0,1,2]:
+    t=dt[(dt['Comp']==c)]['15s_acc'].mean()
+    st=dt[(dt['Comp']==c)]['15s_acc'].std()
+    acc.append(t)
+    err_acc.append(st)
+    t=dt[(dt['Comp']==c)]['15s_st'].mean()
+    st=dt[(dt['Comp']==c)]['15s_st'].std()
+    mst.append(t)
+    err_st.append(st)
+fig, ax = plt.subplots(nrows=1, sharey=False,ncols=2, figsize=(12, 5))
+x_pos = np.arange(3)
+
+ax[0].bar(x_pos, acc, yerr=err_acc, align='center', alpha=0.5, ecolor='black', capsize=10)
+ax[0].set_xlabel('complexity', fontsize=14)
+ax[0].set_ylabel('accuracy', fontsize=14)
+
+ax[1].bar(x_pos, mst, yerr=err_st, align='center', alpha=0.5, ecolor='black', capsize=10)
+ax[1].set_xlabel('complexity', fontsize=14)
+ax[1].set_ylabel('answer time', fontsize=14)
+net=pd.read_excel('assoc_eng2.xlsx')
+G0=nx.from_pandas_edgelist(net, 'source', 'target', edge_attr=True, create_using=nx.DiGraph())
+print('Nodes:',G0.number_of_nodes())
+print('Edges:',G0.number_of_edges())
+print('Density:',nx.density(G0))
+print('Transitivity', nx.transitivity(G0))
+print(nx.is_strongly_connected(G0))
+print(len(max(nx.strongly_connected_components(G0), key=len)))
+H=G0.to_undirected()
+print('Nodes:',H.number_of_nodes())
+print('Edges:',H.number_of_edges())
+print('Density:',nx.density(H))
+print('Transitivity', nx.transitivity(H))
+print(nx.is_connected(H))
+print(len(max(nx.connected_components(H), key=len)))
+plt.show()'''
+import igraph as ig
+import matplotlib.pyplot as plt
+import numpy as np
+import pandas as pd
+#%matplotlib inline
+import networkx as nx
+
+links = [[1, 2], [1, 3], [2, 4], [1, 2]]
+vertices = [v for s in links for v in s]  # = [1,2,1,3,2,4,1,2]
+g = ig.Graph()
+g.add_vertices(vertices)
+for l in links:
+  g.add_edge(l[0], l[1], weight=0.5*l[0]*l[1]) # weight value is just an example
+
+print(g)
+print("\nEdges\n")
+for e in g.es():
+  print("source: %s target: %d" % (e.source, e.target))
+  print("multiplicity %d" % (g.count_multiple(e)))
+  print("weight %f\n" % e['weight'])
+plt.show()

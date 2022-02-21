@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1632209027 source:e:\hw\temp\hw2\main.c
+	<windows.h>
+	<gl/gl.h>
+	<math.h>
+
+1632234617 source:e:\hw\3_course\computer graphics\lab 2\hw2\main.c
+	<windows.h>
+	<gl/gl.h>
+	<math.h>
+

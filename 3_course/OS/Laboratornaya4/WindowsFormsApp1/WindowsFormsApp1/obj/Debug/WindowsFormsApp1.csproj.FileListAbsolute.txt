@@ -1,0 +1,10 @@
+B:\HW\3_course\OS\Laboratornaya4\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+B:\HW\3_course\OS\Laboratornaya4\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+B:\HW\3_course\OS\Laboratornaya4\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+B:\HW\3_course\OS\Laboratornaya4\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csprojAssemblyReference.cache
+B:\HW\3_course\OS\Laboratornaya4\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+B:\HW\3_course\OS\Laboratornaya4\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+B:\HW\3_course\OS\Laboratornaya4\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+B:\HW\3_course\OS\Laboratornaya4\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+B:\HW\3_course\OS\Laboratornaya4\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+B:\HW\3_course\OS\Laboratornaya4\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb

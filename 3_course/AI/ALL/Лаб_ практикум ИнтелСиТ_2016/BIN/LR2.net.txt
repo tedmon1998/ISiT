@@ -1,0 +1,693 @@
+<Net ID="MyNet">
+  <SPF ID="Сигмоида" alpha="3"/>
+  <RF ID="Равномерное" MIN="-1" MAX="1"/>
+  <Layer ID="L_IN">
+    <SPF ID="Линейная" SA="1" SB="0"/>
+    <Neuron ID="X1"/>
+    <Neuron ID="X2"/>
+    <Neuron ID="X3"/>
+    <Neuron ID="X4"/>
+    <Neuron ID="X5"/>
+    <Neuron ID="X6"/>
+    <Neuron ID="X7"/>
+    <Neuron ID="X8"/>
+    <Neuron ID="X9"/>
+    <Neuron ID="X10"/>
+    <Neuron ID="X11"/>
+    <Neuron ID="X12"/>
+    <Neuron ID="X13"/>
+    <Neuron ID="X14"/>
+    <Neuron ID="X15"/>
+    <Neuron ID="X16"/>
+    <Neuron ID="X17"/>
+    <Neuron ID="X18"/>
+    <Neuron ID="X19"/>
+    <Neuron ID="X20"/>
+    <Neuron ID="X21"/>
+    <Neuron ID="X22"/>
+    <Neuron ID="X23"/>
+    <Neuron ID="X24"/>
+    <Neuron ID="X25"/>
+    <Neuron ID="X26"/>
+    <Neuron ID="X27"/>
+    <Neuron ID="X28"/>
+    <Neuron ID="X29"/>
+    <Neuron ID="X30"/>
+    <Neuron ID="X31"/>
+    <Neuron ID="X32"/>
+    <Neuron ID="X33"/>
+    <Neuron ID="X34"/>
+    <Neuron ID="X35"/>
+    <Neuron ID="X36"/>
+    <Neuron ID="X37"/>
+    <Neuron ID="X38"/>
+    <Neuron ID="X39"/>
+    <Neuron ID="X40"/>
+    <Neuron ID="X41"/>
+    <Neuron ID="X42"/>
+    <Neuron ID="X43"/>
+    <Neuron ID="X44"/>
+    <Neuron ID="X45"/>
+    <Neuron ID="X46"/>
+    <Neuron ID="X47"/>
+    <Neuron ID="X48"/>
+    <Neuron ID="X49"/>
+    <Neuron ID="X50"/>
+    <Neuron ID="X51"/>
+    <Neuron ID="X52"/>
+    <Neuron ID="X53"/>
+    <Neuron ID="X54"/>
+    <Neuron ID="X55"/>
+    <Neuron ID="X56"/>
+    <Neuron ID="X57"/>
+    <Neuron ID="X58"/>
+    <Neuron ID="X59"/>
+    <Neuron ID="X60"/>
+    <Neuron ID="X61"/>
+    <Neuron ID="X62"/>
+    <Neuron ID="X63"/>
+    <Neuron ID="X64"/>
+    <Neuron ID="X65"/>
+    <Neuron ID="X66"/>
+    <Neuron ID="X67"/>
+    <Neuron ID="X68"/>
+    <Neuron ID="X69"/>
+    <Neuron ID="X70"/>
+    <Neuron ID="X71"/>
+    <Neuron ID="X72"/>
+    <Neuron ID="X73"/>
+    <Neuron ID="X74"/>
+    <Neuron ID="X75"/>
+    <Neuron ID="X76"/>
+    <Neuron ID="X77"/>
+    <Neuron ID="X78"/>
+    <Neuron ID="X79"/>
+    <Neuron ID="X80"/>
+  </Layer>
+  <Layer ID="H0">
+    <Neuron ID="H1">
+      <Link Path="" Weigth="0"/>
+      <Link Path="\L_IN\X1" Weigth="0"/>
+      <Link Path="\L_IN\X2" Weigth="0"/>
+      <Link Path="\L_IN\X3" Weigth="0"/>
+      <Link Path="\L_IN\X4" Weigth="0"/>
+      <Link Path="\L_IN\X5" Weigth="0"/>
+      <Link Path="\L_IN\X6" Weigth="0"/>
+      <Link Path="\L_IN\X7" Weigth="0"/>
+      <Link Path="\L_IN\X8" Weigth="0"/>
+      <Link Path="\L_IN\X9" Weigth="0"/>
+      <Link Path="\L_IN\X10" Weigth="0"/>
+      <Link Path="\L_IN\X11" Weigth="0"/>
+      <Link Path="\L_IN\X12" Weigth="0"/>
+      <Link Path="\L_IN\X13" Weigth="0"/>
+      <Link Path="\L_IN\X14" Weigth="0"/>
+      <Link Path="\L_IN\X15" Weigth="0"/>
+      <Link Path="\L_IN\X16" Weigth="0"/>
+      <Link Path="\L_IN\X17" Weigth="0"/>
+      <Link Path="\L_IN\X18" Weigth="0"/>
+      <Link Path="\L_IN\X19" Weigth="0"/>
+      <Link Path="\L_IN\X20" Weigth="0"/>
+      <Link Path="\L_IN\X21" Weigth="0"/>
+      <Link Path="\L_IN\X22" Weigth="0"/>
+      <Link Path="\L_IN\X23" Weigth="0"/>
+      <Link Path="\L_IN\X24" Weigth="0"/>
+      <Link Path="\L_IN\X25" Weigth="0"/>
+      <Link Path="\L_IN\X26" Weigth="0"/>
+      <Link Path="\L_IN\X27" Weigth="0"/>
+      <Link Path="\L_IN\X28" Weigth="0"/>
+      <Link Path="\L_IN\X29" Weigth="0"/>
+      <Link Path="\L_IN\X30" Weigth="0"/>
+      <Link Path="\L_IN\X31" Weigth="0"/>
+      <Link Path="\L_IN\X32" Weigth="0"/>
+      <Link Path="\L_IN\X33" Weigth="0"/>
+      <Link Path="\L_IN\X34" Weigth="0"/>
+      <Link Path="\L_IN\X35" Weigth="0"/>
+      <Link Path="\L_IN\X36" Weigth="0"/>
+      <Link Path="\L_IN\X37" Weigth="0"/>
+      <Link Path="\L_IN\X38" Weigth="0"/>
+      <Link Path="\L_IN\X39" Weigth="0"/>
+      <Link Path="\L_IN\X40" Weigth="0"/>
+      <Link Path="\L_IN\X41" Weigth="0"/>
+      <Link Path="\L_IN\X42" Weigth="0"/>
+      <Link Path="\L_IN\X43" Weigth="0"/>
+      <Link Path="\L_IN\X44" Weigth="0"/>
+      <Link Path="\L_IN\X45" Weigth="0"/>
+      <Link Path="\L_IN\X46" Weigth="0"/>
+      <Link Path="\L_IN\X47" Weigth="0"/>
+      <Link Path="\L_IN\X48" Weigth="0"/>
+      <Link Path="\L_IN\X49" Weigth="0"/>
+      <Link Path="\L_IN\X50" Weigth="0"/>
+      <Link Path="\L_IN\X51" Weigth="0"/>
+      <Link Path="\L_IN\X52" Weigth="0"/>
+      <Link Path="\L_IN\X53" Weigth="0"/>
+      <Link Path="\L_IN\X54" Weigth="0"/>
+      <Link Path="\L_IN\X55" Weigth="0"/>
+      <Link Path="\L_IN\X56" Weigth="0"/>
+      <Link Path="\L_IN\X57" Weigth="0"/>
+      <Link Path="\L_IN\X58" Weigth="0"/>
+      <Link Path="\L_IN\X59" Weigth="0"/>
+      <Link Path="\L_IN\X60" Weigth="0"/>
+      <Link Path="\L_IN\X61" Weigth="0"/>
+      <Link Path="\L_IN\X62" Weigth="0"/>
+      <Link Path="\L_IN\X63" Weigth="0"/>
+      <Link Path="\L_IN\X64" Weigth="0"/>
+      <Link Path="\L_IN\X65" Weigth="0"/>
+      <Link Path="\L_IN\X66" Weigth="0"/>
+      <Link Path="\L_IN\X67" Weigth="0"/>
+      <Link Path="\L_IN\X68" Weigth="0"/>
+      <Link Path="\L_IN\X69" Weigth="0"/>
+      <Link Path="\L_IN\X70" Weigth="0"/>
+      <Link Path="\L_IN\X71" Weigth="0"/>
+      <Link Path="\L_IN\X72" Weigth="0"/>
+      <Link Path="\L_IN\X73" Weigth="0"/>
+      <Link Path="\L_IN\X74" Weigth="0"/>
+      <Link Path="\L_IN\X75" Weigth="0"/>
+      <Link Path="\L_IN\X76" Weigth="0"/>
+      <Link Path="\L_IN\X77" Weigth="0"/>
+      <Link Path="\L_IN\X78" Weigth="0"/>
+      <Link Path="\L_IN\X79" Weigth="0"/>
+      <Link Path="\L_IN\X80" Weigth="0"/>
+    </Neuron>
+    <Neuron ID="H2">
+      <Link Path="" Weigth="0"/>
+      <Link Path="\L_IN\X1" Weigth="0"/>
+      <Link Path="\L_IN\X2" Weigth="0"/>
+      <Link Path="\L_IN\X3" Weigth="0"/>
+      <Link Path="\L_IN\X4" Weigth="0"/>
+      <Link Path="\L_IN\X5" Weigth="0"/>
+      <Link Path="\L_IN\X6" Weigth="0"/>
+      <Link Path="\L_IN\X7" Weigth="0"/>
+      <Link Path="\L_IN\X8" Weigth="0"/>
+      <Link Path="\L_IN\X9" Weigth="0"/>
+      <Link Path="\L_IN\X10" Weigth="0"/>
+      <Link Path="\L_IN\X11" Weigth="0"/>
+      <Link Path="\L_IN\X12" Weigth="0"/>
+      <Link Path="\L_IN\X13" Weigth="0"/>
+      <Link Path="\L_IN\X14" Weigth="0"/>
+      <Link Path="\L_IN\X15" Weigth="0"/>
+      <Link Path="\L_IN\X16" Weigth="0"/>
+      <Link Path="\L_IN\X17" Weigth="0"/>
+      <Link Path="\L_IN\X18" Weigth="0"/>
+      <Link Path="\L_IN\X19" Weigth="0"/>
+      <Link Path="\L_IN\X20" Weigth="0"/>
+      <Link Path="\L_IN\X21" Weigth="0"/>
+      <Link Path="\L_IN\X22" Weigth="0"/>
+      <Link Path="\L_IN\X23" Weigth="0"/>
+      <Link Path="\L_IN\X24" Weigth="0"/>
+      <Link Path="\L_IN\X25" Weigth="0"/>
+      <Link Path="\L_IN\X26" Weigth="0"/>
+      <Link Path="\L_IN\X27" Weigth="0"/>
+      <Link Path="\L_IN\X28" Weigth="0"/>
+      <Link Path="\L_IN\X29" Weigth="0"/>
+      <Link Path="\L_IN\X30" Weigth="0"/>
+      <Link Path="\L_IN\X31" Weigth="0"/>
+      <Link Path="\L_IN\X32" Weigth="0"/>
+      <Link Path="\L_IN\X33" Weigth="0"/>
+      <Link Path="\L_IN\X34" Weigth="0"/>
+      <Link Path="\L_IN\X35" Weigth="0"/>
+      <Link Path="\L_IN\X36" Weigth="0"/>
+      <Link Path="\L_IN\X37" Weigth="0"/>
+      <Link Path="\L_IN\X38" Weigth="0"/>
+      <Link Path="\L_IN\X39" Weigth="0"/>
+      <Link Path="\L_IN\X40" Weigth="0"/>
+      <Link Path="\L_IN\X41" Weigth="0"/>
+      <Link Path="\L_IN\X42" Weigth="0"/>
+      <Link Path="\L_IN\X43" Weigth="0"/>
+      <Link Path="\L_IN\X44" Weigth="0"/>
+      <Link Path="\L_IN\X45" Weigth="0"/>
+      <Link Path="\L_IN\X46" Weigth="0"/>
+      <Link Path="\L_IN\X47" Weigth="0"/>
+      <Link Path="\L_IN\X48" Weigth="0"/>
+      <Link Path="\L_IN\X49" Weigth="0"/>
+      <Link Path="\L_IN\X50" Weigth="0"/>
+      <Link Path="\L_IN\X51" Weigth="0"/>
+      <Link Path="\L_IN\X52" Weigth="0"/>
+      <Link Path="\L_IN\X53" Weigth="0"/>
+      <Link Path="\L_IN\X54" Weigth="0"/>
+      <Link Path="\L_IN\X55" Weigth="0"/>
+      <Link Path="\L_IN\X56" Weigth="0"/>
+      <Link Path="\L_IN\X57" Weigth="0"/>
+      <Link Path="\L_IN\X58" Weigth="0"/>
+      <Link Path="\L_IN\X59" Weigth="0"/>
+      <Link Path="\L_IN\X60" Weigth="0"/>
+      <Link Path="\L_IN\X61" Weigth="0"/>
+      <Link Path="\L_IN\X62" Weigth="0"/>
+      <Link Path="\L_IN\X63" Weigth="0"/>
+      <Link Path="\L_IN\X64" Weigth="0"/>
+      <Link Path="\L_IN\X65" Weigth="0"/>
+      <Link Path="\L_IN\X66" Weigth="0"/>
+      <Link Path="\L_IN\X67" Weigth="0"/>
+      <Link Path="\L_IN\X68" Weigth="0"/>
+      <Link Path="\L_IN\X69" Weigth="0"/>
+      <Link Path="\L_IN\X70" Weigth="0"/>
+      <Link Path="\L_IN\X71" Weigth="0"/>
+      <Link Path="\L_IN\X72" Weigth="0"/>
+      <Link Path="\L_IN\X73" Weigth="0"/>
+      <Link Path="\L_IN\X74" Weigth="0"/>
+      <Link Path="\L_IN\X75" Weigth="0"/>
+      <Link Path="\L_IN\X76" Weigth="0"/>
+      <Link Path="\L_IN\X77" Weigth="0"/>
+      <Link Path="\L_IN\X78" Weigth="0"/>
+      <Link Path="\L_IN\X79" Weigth="0"/>
+      <Link Path="\L_IN\X80" Weigth="0"/>
+    </Neuron>
+    <Neuron ID="H3">
+      <Link Path="" Weigth="0"/>
+      <Link Path="\L_IN\X1" Weigth="0"/>
+      <Link Path="\L_IN\X2" Weigth="0"/>
+      <Link Path="\L_IN\X3" Weigth="0"/>
+      <Link Path="\L_IN\X4" Weigth="0"/>
+      <Link Path="\L_IN\X5" Weigth="0"/>
+      <Link Path="\L_IN\X6" Weigth="0"/>
+      <Link Path="\L_IN\X7" Weigth="0"/>
+      <Link Path="\L_IN\X8" Weigth="0"/>
+      <Link Path="\L_IN\X9" Weigth="0"/>
+      <Link Path="\L_IN\X10" Weigth="0"/>
+      <Link Path="\L_IN\X11" Weigth="0"/>
+      <Link Path="\L_IN\X12" Weigth="0"/>
+      <Link Path="\L_IN\X13" Weigth="0"/>
+      <Link Path="\L_IN\X14" Weigth="0"/>
+      <Link Path="\L_IN\X15" Weigth="0"/>
+      <Link Path="\L_IN\X16" Weigth="0"/>
+      <Link Path="\L_IN\X17" Weigth="0"/>
+      <Link Path="\L_IN\X18" Weigth="0"/>
+      <Link Path="\L_IN\X19" Weigth="0"/>
+      <Link Path="\L_IN\X20" Weigth="0"/>
+      <Link Path="\L_IN\X21" Weigth="0"/>
+      <Link Path="\L_IN\X22" Weigth="0"/>
+      <Link Path="\L_IN\X23" Weigth="0"/>
+      <Link Path="\L_IN\X24" Weigth="0"/>
+      <Link Path="\L_IN\X25" Weigth="0"/>
+      <Link Path="\L_IN\X26" Weigth="0"/>
+      <Link Path="\L_IN\X27" Weigth="0"/>
+      <Link Path="\L_IN\X28" Weigth="0"/>
+      <Link Path="\L_IN\X29" Weigth="0"/>
+      <Link Path="\L_IN\X30" Weigth="0"/>
+      <Link Path="\L_IN\X31" Weigth="0"/>
+      <Link Path="\L_IN\X32" Weigth="0"/>
+      <Link Path="\L_IN\X33" Weigth="0"/>
+      <Link Path="\L_IN\X34" Weigth="0"/>
+      <Link Path="\L_IN\X35" Weigth="0"/>
+      <Link Path="\L_IN\X36" Weigth="0"/>
+      <Link Path="\L_IN\X37" Weigth="0"/>
+      <Link Path="\L_IN\X38" Weigth="0"/>
+      <Link Path="\L_IN\X39" Weigth="0"/>
+      <Link Path="\L_IN\X40" Weigth="0"/>
+      <Link Path="\L_IN\X41" Weigth="0"/>
+      <Link Path="\L_IN\X42" Weigth="0"/>
+      <Link Path="\L_IN\X43" Weigth="0"/>
+      <Link Path="\L_IN\X44" Weigth="0"/>
+      <Link Path="\L_IN\X45" Weigth="0"/>
+      <Link Path="\L_IN\X46" Weigth="0"/>
+      <Link Path="\L_IN\X47" Weigth="0"/>
+      <Link Path="\L_IN\X48" Weigth="0"/>
+      <Link Path="\L_IN\X49" Weigth="0"/>
+      <Link Path="\L_IN\X50" Weigth="0"/>
+      <Link Path="\L_IN\X51" Weigth="0"/>
+      <Link Path="\L_IN\X52" Weigth="0"/>
+      <Link Path="\L_IN\X53" Weigth="0"/>
+      <Link Path="\L_IN\X54" Weigth="0"/>
+      <Link Path="\L_IN\X55" Weigth="0"/>
+      <Link Path="\L_IN\X56" Weigth="0"/>
+      <Link Path="\L_IN\X57" Weigth="0"/>
+      <Link Path="\L_IN\X58" Weigth="0"/>
+      <Link Path="\L_IN\X59" Weigth="0"/>
+      <Link Path="\L_IN\X60" Weigth="0"/>
+      <Link Path="\L_IN\X61" Weigth="0"/>
+      <Link Path="\L_IN\X62" Weigth="0"/>
+      <Link Path="\L_IN\X63" Weigth="0"/>
+      <Link Path="\L_IN\X64" Weigth="0"/>
+      <Link Path="\L_IN\X65" Weigth="0"/>
+      <Link Path="\L_IN\X66" Weigth="0"/>
+      <Link Path="\L_IN\X67" Weigth="0"/>
+      <Link Path="\L_IN\X68" Weigth="0"/>
+      <Link Path="\L_IN\X69" Weigth="0"/>
+      <Link Path="\L_IN\X70" Weigth="0"/>
+      <Link Path="\L_IN\X71" Weigth="0"/>
+      <Link Path="\L_IN\X72" Weigth="0"/>
+      <Link Path="\L_IN\X73" Weigth="0"/>
+      <Link Path="\L_IN\X74" Weigth="0"/>
+      <Link Path="\L_IN\X75" Weigth="0"/>
+      <Link Path="\L_IN\X76" Weigth="0"/>
+      <Link Path="\L_IN\X77" Weigth="0"/>
+      <Link Path="\L_IN\X78" Weigth="0"/>
+      <Link Path="\L_IN\X79" Weigth="0"/>
+      <Link Path="\L_IN\X80" Weigth="0"/>
+    </Neuron>
+    <Neuron ID="H4">
+      <Link Path="" Weigth="0"/>
+      <Link Path="\L_IN\X1" Weigth="0"/>
+      <Link Path="\L_IN\X2" Weigth="0"/>
+      <Link Path="\L_IN\X3" Weigth="0"/>
+      <Link Path="\L_IN\X4" Weigth="0"/>
+      <Link Path="\L_IN\X5" Weigth="0"/>
+      <Link Path="\L_IN\X6" Weigth="0"/>
+      <Link Path="\L_IN\X7" Weigth="0"/>
+      <Link Path="\L_IN\X8" Weigth="0"/>
+      <Link Path="\L_IN\X9" Weigth="0"/>
+      <Link Path="\L_IN\X10" Weigth="0"/>
+      <Link Path="\L_IN\X11" Weigth="0"/>
+      <Link Path="\L_IN\X12" Weigth="0"/>
+      <Link Path="\L_IN\X13" Weigth="0"/>
+      <Link Path="\L_IN\X14" Weigth="0"/>
+      <Link Path="\L_IN\X15" Weigth="0"/>
+      <Link Path="\L_IN\X16" Weigth="0"/>
+      <Link Path="\L_IN\X17" Weigth="0"/>
+      <Link Path="\L_IN\X18" Weigth="0"/>
+      <Link Path="\L_IN\X19" Weigth="0"/>
+      <Link Path="\L_IN\X20" Weigth="0"/>
+      <Link Path="\L_IN\X21" Weigth="0"/>
+      <Link Path="\L_IN\X22" Weigth="0"/>
+      <Link Path="\L_IN\X23" Weigth="0"/>
+      <Link Path="\L_IN\X24" Weigth="0"/>
+      <Link Path="\L_IN\X25" Weigth="0"/>
+      <Link Path="\L_IN\X26" Weigth="0"/>
+      <Link Path="\L_IN\X27" Weigth="0"/>
+      <Link Path="\L_IN\X28" Weigth="0"/>
+      <Link Path="\L_IN\X29" Weigth="0"/>
+      <Link Path="\L_IN\X30" Weigth="0"/>
+      <Link Path="\L_IN\X31" Weigth="0"/>
+      <Link Path="\L_IN\X32" Weigth="0"/>
+      <Link Path="\L_IN\X33" Weigth="0"/>
+      <Link Path="\L_IN\X34" Weigth="0"/>
+      <Link Path="\L_IN\X35" Weigth="0"/>
+      <Link Path="\L_IN\X36" Weigth="0"/>
+      <Link Path="\L_IN\X37" Weigth="0"/>
+      <Link Path="\L_IN\X38" Weigth="0"/>
+      <Link Path="\L_IN\X39" Weigth="0"/>
+      <Link Path="\L_IN\X40" Weigth="0"/>
+      <Link Path="\L_IN\X41" Weigth="0"/>
+      <Link Path="\L_IN\X42" Weigth="0"/>
+      <Link Path="\L_IN\X43" Weigth="0"/>
+      <Link Path="\L_IN\X44" Weigth="0"/>
+      <Link Path="\L_IN\X45" Weigth="0"/>
+      <Link Path="\L_IN\X46" Weigth="0"/>
+      <Link Path="\L_IN\X47" Weigth="0"/>
+      <Link Path="\L_IN\X48" Weigth="0"/>
+      <Link Path="\L_IN\X49" Weigth="0"/>
+      <Link Path="\L_IN\X50" Weigth="0"/>
+      <Link Path="\L_IN\X51" Weigth="0"/>
+      <Link Path="\L_IN\X52" Weigth="0"/>
+      <Link Path="\L_IN\X53" Weigth="0"/>
+      <Link Path="\L_IN\X54" Weigth="0"/>
+      <Link Path="\L_IN\X55" Weigth="0"/>
+      <Link Path="\L_IN\X56" Weigth="0"/>
+      <Link Path="\L_IN\X57" Weigth="0"/>
+      <Link Path="\L_IN\X58" Weigth="0"/>
+      <Link Path="\L_IN\X59" Weigth="0"/>
+      <Link Path="\L_IN\X60" Weigth="0"/>
+      <Link Path="\L_IN\X61" Weigth="0"/>
+      <Link Path="\L_IN\X62" Weigth="0"/>
+      <Link Path="\L_IN\X63" Weigth="0"/>
+      <Link Path="\L_IN\X64" Weigth="0"/>
+      <Link Path="\L_IN\X65" Weigth="0"/>
+      <Link Path="\L_IN\X66" Weigth="0"/>
+      <Link Path="\L_IN\X67" Weigth="0"/>
+      <Link Path="\L_IN\X68" Weigth="0"/>
+      <Link Path="\L_IN\X69" Weigth="0"/>
+      <Link Path="\L_IN\X70" Weigth="0"/>
+      <Link Path="\L_IN\X71" Weigth="0"/>
+      <Link Path="\L_IN\X72" Weigth="0"/>
+      <Link Path="\L_IN\X73" Weigth="0"/>
+      <Link Path="\L_IN\X74" Weigth="0"/>
+      <Link Path="\L_IN\X75" Weigth="0"/>
+      <Link Path="\L_IN\X76" Weigth="0"/>
+      <Link Path="\L_IN\X77" Weigth="0"/>
+      <Link Path="\L_IN\X78" Weigth="0"/>
+      <Link Path="\L_IN\X79" Weigth="0"/>
+      <Link Path="\L_IN\X80" Weigth="0"/>
+    </Neuron>
+    <Neuron ID="H5">
+      <Link Path="" Weigth="0"/>
+      <Link Path="\L_IN\X1" Weigth="0"/>
+      <Link Path="\L_IN\X2" Weigth="0"/>
+      <Link Path="\L_IN\X3" Weigth="0"/>
+      <Link Path="\L_IN\X4" Weigth="0"/>
+      <Link Path="\L_IN\X5" Weigth="0"/>
+      <Link Path="\L_IN\X6" Weigth="0"/>
+      <Link Path="\L_IN\X7" Weigth="0"/>
+      <Link Path="\L_IN\X8" Weigth="0"/>
+      <Link Path="\L_IN\X9" Weigth="0"/>
+      <Link Path="\L_IN\X10" Weigth="0"/>
+      <Link Path="\L_IN\X11" Weigth="0"/>
+      <Link Path="\L_IN\X12" Weigth="0"/>
+      <Link Path="\L_IN\X13" Weigth="0"/>
+      <Link Path="\L_IN\X14" Weigth="0"/>
+      <Link Path="\L_IN\X15" Weigth="0"/>
+      <Link Path="\L_IN\X16" Weigth="0"/>
+      <Link Path="\L_IN\X17" Weigth="0"/>
+      <Link Path="\L_IN\X18" Weigth="0"/>
+      <Link Path="\L_IN\X19" Weigth="0"/>
+      <Link Path="\L_IN\X20" Weigth="0"/>
+      <Link Path="\L_IN\X21" Weigth="0"/>
+      <Link Path="\L_IN\X22" Weigth="0"/>
+      <Link Path="\L_IN\X23" Weigth="0"/>
+      <Link Path="\L_IN\X24" Weigth="0"/>
+      <Link Path="\L_IN\X25" Weigth="0"/>
+      <Link Path="\L_IN\X26" Weigth="0"/>
+      <Link Path="\L_IN\X27" Weigth="0"/>
+      <Link Path="\L_IN\X28" Weigth="0"/>
+      <Link Path="\L_IN\X29" Weigth="0"/>
+      <Link Path="\L_IN\X30" Weigth="0"/>
+      <Link Path="\L_IN\X31" Weigth="0"/>
+      <Link Path="\L_IN\X32" Weigth="0"/>
+      <Link Path="\L_IN\X33" Weigth="0"/>
+      <Link Path="\L_IN\X34" Weigth="0"/>
+      <Link Path="\L_IN\X35" Weigth="0"/>
+      <Link Path="\L_IN\X36" Weigth="0"/>
+      <Link Path="\L_IN\X37" Weigth="0"/>
+      <Link Path="\L_IN\X38" Weigth="0"/>
+      <Link Path="\L_IN\X39" Weigth="0"/>
+      <Link Path="\L_IN\X40" Weigth="0"/>
+      <Link Path="\L_IN\X41" Weigth="0"/>
+      <Link Path="\L_IN\X42" Weigth="0"/>
+      <Link Path="\L_IN\X43" Weigth="0"/>
+      <Link Path="\L_IN\X44" Weigth="0"/>
+      <Link Path="\L_IN\X45" Weigth="0"/>
+      <Link Path="\L_IN\X46" Weigth="0"/>
+      <Link Path="\L_IN\X47" Weigth="0"/>
+      <Link Path="\L_IN\X48" Weigth="0"/>
+      <Link Path="\L_IN\X49" Weigth="0"/>
+      <Link Path="\L_IN\X50" Weigth="0"/>
+      <Link Path="\L_IN\X51" Weigth="0"/>
+      <Link Path="\L_IN\X52" Weigth="0"/>
+      <Link Path="\L_IN\X53" Weigth="0"/>
+      <Link Path="\L_IN\X54" Weigth="0"/>
+      <Link Path="\L_IN\X55" Weigth="0"/>
+      <Link Path="\L_IN\X56" Weigth="0"/>
+      <Link Path="\L_IN\X57" Weigth="0"/>
+      <Link Path="\L_IN\X58" Weigth="0"/>
+      <Link Path="\L_IN\X59" Weigth="0"/>
+      <Link Path="\L_IN\X60" Weigth="0"/>
+      <Link Path="\L_IN\X61" Weigth="0"/>
+      <Link Path="\L_IN\X62" Weigth="0"/>
+      <Link Path="\L_IN\X63" Weigth="0"/>
+      <Link Path="\L_IN\X64" Weigth="0"/>
+      <Link Path="\L_IN\X65" Weigth="0"/>
+      <Link Path="\L_IN\X66" Weigth="0"/>
+      <Link Path="\L_IN\X67" Weigth="0"/>
+      <Link Path="\L_IN\X68" Weigth="0"/>
+      <Link Path="\L_IN\X69" Weigth="0"/>
+      <Link Path="\L_IN\X70" Weigth="0"/>
+      <Link Path="\L_IN\X71" Weigth="0"/>
+      <Link Path="\L_IN\X72" Weigth="0"/>
+      <Link Path="\L_IN\X73" Weigth="0"/>
+      <Link Path="\L_IN\X74" Weigth="0"/>
+      <Link Path="\L_IN\X75" Weigth="0"/>
+      <Link Path="\L_IN\X76" Weigth="0"/>
+      <Link Path="\L_IN\X77" Weigth="0"/>
+      <Link Path="\L_IN\X78" Weigth="0"/>
+      <Link Path="\L_IN\X79" Weigth="0"/>
+      <Link Path="\L_IN\X80" Weigth="0"/>
+    </Neuron>
+    <Neuron ID="H6">
+      <Link Path="" Weigth="0"/>
+      <Link Path="\L_IN\X1" Weigth="0"/>
+      <Link Path="\L_IN\X2" Weigth="0"/>
+      <Link Path="\L_IN\X3" Weigth="0"/>
+      <Link Path="\L_IN\X4" Weigth="0"/>
+      <Link Path="\L_IN\X5" Weigth="0"/>
+      <Link Path="\L_IN\X6" Weigth="0"/>
+      <Link Path="\L_IN\X7" Weigth="0"/>
+      <Link Path="\L_IN\X8" Weigth="0"/>
+      <Link Path="\L_IN\X9" Weigth="0"/>
+      <Link Path="\L_IN\X10" Weigth="0"/>
+      <Link Path="\L_IN\X11" Weigth="0"/>
+      <Link Path="\L_IN\X12" Weigth="0"/>
+      <Link Path="\L_IN\X13" Weigth="0"/>
+      <Link Path="\L_IN\X14" Weigth="0"/>
+      <Link Path="\L_IN\X15" Weigth="0"/>
+      <Link Path="\L_IN\X16" Weigth="0"/>
+      <Link Path="\L_IN\X17" Weigth="0"/>
+      <Link Path="\L_IN\X18" Weigth="0"/>
+      <Link Path="\L_IN\X19" Weigth="0"/>
+      <Link Path="\L_IN\X20" Weigth="0"/>
+      <Link Path="\L_IN\X21" Weigth="0"/>
+      <Link Path="\L_IN\X22" Weigth="0"/>
+      <Link Path="\L_IN\X23" Weigth="0"/>
+      <Link Path="\L_IN\X24" Weigth="0"/>
+      <Link Path="\L_IN\X25" Weigth="0"/>
+      <Link Path="\L_IN\X26" Weigth="0"/>
+      <Link Path="\L_IN\X27" Weigth="0"/>
+      <Link Path="\L_IN\X28" Weigth="0"/>
+      <Link Path="\L_IN\X29" Weigth="0"/>
+      <Link Path="\L_IN\X30" Weigth="0"/>
+      <Link Path="\L_IN\X31" Weigth="0"/>
+      <Link Path="\L_IN\X32" Weigth="0"/>
+      <Link Path="\L_IN\X33" Weigth="0"/>
+      <Link Path="\L_IN\X34" Weigth="0"/>
+      <Link Path="\L_IN\X35" Weigth="0"/>
+      <Link Path="\L_IN\X36" Weigth="0"/>
+      <Link Path="\L_IN\X37" Weigth="0"/>
+      <Link Path="\L_IN\X38" Weigth="0"/>
+      <Link Path="\L_IN\X39" Weigth="0"/>
+      <Link Path="\L_IN\X40" Weigth="0"/>
+      <Link Path="\L_IN\X41" Weigth="0"/>
+      <Link Path="\L_IN\X42" Weigth="0"/>
+      <Link Path="\L_IN\X43" Weigth="0"/>
+      <Link Path="\L_IN\X44" Weigth="0"/>
+      <Link Path="\L_IN\X45" Weigth="0"/>
+      <Link Path="\L_IN\X46" Weigth="0"/>
+      <Link Path="\L_IN\X47" Weigth="0"/>
+      <Link Path="\L_IN\X48" Weigth="0"/>
+      <Link Path="\L_IN\X49" Weigth="0"/>
+      <Link Path="\L_IN\X50" Weigth="0"/>
+      <Link Path="\L_IN\X51" Weigth="0"/>
+      <Link Path="\L_IN\X52" Weigth="0"/>
+      <Link Path="\L_IN\X53" Weigth="0"/>
+      <Link Path="\L_IN\X54" Weigth="0"/>
+      <Link Path="\L_IN\X55" Weigth="0"/>
+      <Link Path="\L_IN\X56" Weigth="0"/>
+      <Link Path="\L_IN\X57" Weigth="0"/>
+      <Link Path="\L_IN\X58" Weigth="0"/>
+      <Link Path="\L_IN\X59" Weigth="0"/>
+      <Link Path="\L_IN\X60" Weigth="0"/>
+      <Link Path="\L_IN\X61" Weigth="0"/>
+      <Link Path="\L_IN\X62" Weigth="0"/>
+      <Link Path="\L_IN\X63" Weigth="0"/>
+      <Link Path="\L_IN\X64" Weigth="0"/>
+      <Link Path="\L_IN\X65" Weigth="0"/>
+      <Link Path="\L_IN\X66" Weigth="0"/>
+      <Link Path="\L_IN\X67" Weigth="0"/>
+      <Link Path="\L_IN\X68" Weigth="0"/>
+      <Link Path="\L_IN\X69" Weigth="0"/>
+      <Link Path="\L_IN\X70" Weigth="0"/>
+      <Link Path="\L_IN\X71" Weigth="0"/>
+      <Link Path="\L_IN\X72" Weigth="0"/>
+      <Link Path="\L_IN\X73" Weigth="0"/>
+      <Link Path="\L_IN\X74" Weigth="0"/>
+      <Link Path="\L_IN\X75" Weigth="0"/>
+      <Link Path="\L_IN\X76" Weigth="0"/>
+      <Link Path="\L_IN\X77" Weigth="0"/>
+      <Link Path="\L_IN\X78" Weigth="0"/>
+      <Link Path="\L_IN\X79" Weigth="0"/>
+      <Link Path="\L_IN\X80" Weigth="0"/>
+    </Neuron>
+    <Neuron ID="H7">
+      <Link Path="" Weigth="0"/>
+      <Link Path="\L_IN\X1" Weigth="0"/>
+      <Link Path="\L_IN\X2" Weigth="0"/>
+      <Link Path="\L_IN\X3" Weigth="0"/>
+      <Link Path="\L_IN\X4" Weigth="0"/>
+      <Link Path="\L_IN\X5" Weigth="0"/>
+      <Link Path="\L_IN\X6" Weigth="0"/>
+      <Link Path="\L_IN\X7" Weigth="0"/>
+      <Link Path="\L_IN\X8" Weigth="0"/>
+      <Link Path="\L_IN\X9" Weigth="0"/>
+      <Link Path="\L_IN\X10" Weigth="0"/>
+      <Link Path="\L_IN\X11" Weigth="0"/>
+      <Link Path="\L_IN\X12" Weigth="0"/>
+      <Link Path="\L_IN\X13" Weigth="0"/>
+      <Link Path="\L_IN\X14" Weigth="0"/>
+      <Link Path="\L_IN\X15" Weigth="0"/>
+      <Link Path="\L_IN\X16" Weigth="0"/>
+      <Link Path="\L_IN\X17" Weigth="0"/>
+      <Link Path="\L_IN\X18" Weigth="0"/>
+      <Link Path="\L_IN\X19" Weigth="0"/>
+      <Link Path="\L_IN\X20" Weigth="0"/>
+      <Link Path="\L_IN\X21" Weigth="0"/>
+      <Link Path="\L_IN\X22" Weigth="0"/>
+      <Link Path="\L_IN\X23" Weigth="0"/>
+      <Link Path="\L_IN\X24" Weigth="0"/>
+      <Link Path="\L_IN\X25" Weigth="0"/>
+      <Link Path="\L_IN\X26" Weigth="0"/>
+      <Link Path="\L_IN\X27" Weigth="0"/>
+      <Link Path="\L_IN\X28" Weigth="0"/>
+      <Link Path="\L_IN\X29" Weigth="0"/>
+      <Link Path="\L_IN\X30" Weigth="0"/>
+      <Link Path="\L_IN\X31" Weigth="0"/>
+      <Link Path="\L_IN\X32" Weigth="0"/>
+      <Link Path="\L_IN\X33" Weigth="0"/>
+      <Link Path="\L_IN\X34" Weigth="0"/>
+      <Link Path="\L_IN\X35" Weigth="0"/>
+      <Link Path="\L_IN\X36" Weigth="0"/>
+      <Link Path="\L_IN\X37" Weigth="0"/>
+      <Link Path="\L_IN\X38" Weigth="0"/>
+      <Link Path="\L_IN\X39" Weigth="0"/>
+      <Link Path="\L_IN\X40" Weigth="0"/>
+      <Link Path="\L_IN\X41" Weigth="0"/>
+      <Link Path="\L_IN\X42" Weigth="0"/>
+      <Link Path="\L_IN\X43" Weigth="0"/>
+      <Link Path="\L_IN\X44" Weigth="0"/>
+      <Link Path="\L_IN\X45" Weigth="0"/>
+      <Link Path="\L_IN\X46" Weigth="0"/>
+      <Link Path="\L_IN\X47" Weigth="0"/>
+      <Link Path="\L_IN\X48" Weigth="0"/>
+      <Link Path="\L_IN\X49" Weigth="0"/>
+      <Link Path="\L_IN\X50" Weigth="0"/>
+      <Link Path="\L_IN\X51" Weigth="0"/>
+      <Link Path="\L_IN\X52" Weigth="0"/>
+      <Link Path="\L_IN\X53" Weigth="0"/>
+      <Link Path="\L_IN\X54" Weigth="0"/>
+      <Link Path="\L_IN\X55" Weigth="0"/>
+      <Link Path="\L_IN\X56" Weigth="0"/>
+      <Link Path="\L_IN\X57" Weigth="0"/>
+      <Link Path="\L_IN\X58" Weigth="0"/>
+      <Link Path="\L_IN\X59" Weigth="0"/>
+      <Link Path="\L_IN\X60" Weigth="0"/>
+      <Link Path="\L_IN\X61" Weigth="0"/>
+      <Link Path="\L_IN\X62" Weigth="0"/>
+      <Link Path="\L_IN\X63" Weigth="0"/>
+      <Link Path="\L_IN\X64" Weigth="0"/>
+      <Link Path="\L_IN\X65" Weigth="0"/>
+      <Link Path="\L_IN\X66" Weigth="0"/>
+      <Link Path="\L_IN\X67" Weigth="0"/>
+      <Link Path="\L_IN\X68" Weigth="0"/>
+      <Link Path="\L_IN\X69" Weigth="0"/>
+      <Link Path="\L_IN\X70" Weigth="0"/>
+      <Link Path="\L_IN\X71" Weigth="0"/>
+      <Link Path="\L_IN\X72" Weigth="0"/>
+      <Link Path="\L_IN\X73" Weigth="0"/>
+      <Link Path="\L_IN\X74" Weigth="0"/>
+      <Link Path="\L_IN\X75" Weigth="0"/>
+      <Link Path="\L_IN\X76" Weigth="0"/>
+      <Link Path="\L_IN\X77" Weigth="0"/>
+      <Link Path="\L_IN\X78" Weigth="0"/>
+      <Link Path="\L_IN\X79" Weigth="0"/>
+      <Link Path="\L_IN\X80" Weigth="0"/>
+    </Neuron>
+  </Layer>
+  <Layer ID="OL">
+    <SPF ID="Линейная" SA="1" SB="0"/>
+    <Neuron ID="Y1">
+      <Link Path="" Weigth="0"/>
+      <Link Path="\H0\H1" Weigth="0"/>
+      <Link Path="\H0\H2" Weigth="0"/>
+      <Link Path="\H0\H3" Weigth="0"/>
+      <Link Path="\H0\H4" Weigth="0"/>
+      <Link Path="\H0\H5" Weigth="0"/>
+      <Link Path="\H0\H6" Weigth="0"/>
+      <Link Path="\H0\H7" Weigth="0"/>
+    </Neuron>
+    <Neuron ID="Y2">
+      <Link Path="" Weigth="0"/>
+      <Link Path="\H0\H1" Weigth="0"/>
+      <Link Path="\H0\H2" Weigth="0"/>
+      <Link Path="\H0\H3" Weigth="0"/>
+      <Link Path="\H0\H4" Weigth="0"/>
+      <Link Path="\H0\H5" Weigth="0"/>
+      <Link Path="\H0\H6" Weigth="0"/>
+      <Link Path="\H0\H7" Weigth="0"/>
+    </Neuron>
+  </Layer>
+</Net>

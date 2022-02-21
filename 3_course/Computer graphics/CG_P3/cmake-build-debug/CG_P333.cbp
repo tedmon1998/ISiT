@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CG_P333"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\shaders\;CMake Files\textures\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CG_P333">
+				<Option output="E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/CG_P333.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="G:/MSYS64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="G:/MSYS64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="G:/MSYS64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="G:/MSYS64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 CG_P333"/>
+					<CompileFile command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CG_P333/fast">
+				<Option output="E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/CG_P333.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="G:/MSYS64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include"/>
+					<Add directory="G:/MSYS64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../include"/>
+					<Add directory="G:/MSYS64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/include-fixed"/>
+					<Add directory="G:/MSYS64/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/10.3.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 CG_P333/fast"/>
+					<CompileFile command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="G:/MSYS64/mingw64/bin/mingw32-make.exe -f &quot;E:/HW/3_course/Computer graphics/CG_P3/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="E:/HW/3_course/Computer graphics/CG_P3/main.c">
+			<Option target="CG_P333"/>
+		</Unit>
+		<Unit filename="E:/HW/3_course/Computer graphics/CG_P3/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="E:/HW/3_course/Computer graphics/CG_P3/shaders/fragment.glsl">
+			<Option virtualFolder="CMake Files\shaders\"/>
+		</Unit>
+		<Unit filename="E:/HW/3_course/Computer graphics/CG_P3/shaders/vertex.glsl">
+			<Option virtualFolder="CMake Files\shaders\"/>
+		</Unit>
+		<Unit filename="E:/HW/3_course/Computer graphics/CG_P3/textures/background.png">
+			<Option virtualFolder="CMake Files\textures\"/>
+		</Unit>
+		<Unit filename="E:/HW/3_course/Computer graphics/CG_P3/textures/eyes.png">
+			<Option virtualFolder="CMake Files\textures\"/>
+		</Unit>
+		<Unit filename="E:/HW/3_course/Computer graphics/CG_P3/textures/tail.png">
+			<Option virtualFolder="CMake Files\textures\"/>
+		</Unit>
+		<Unit filename="E:/HW/3_course/Computer graphics/CG_P3/textures/window_star.png">
+			<Option virtualFolder="CMake Files\textures\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

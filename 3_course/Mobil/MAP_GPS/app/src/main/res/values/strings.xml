@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MapLab4</string>
+    <string name="provider_gps">GPS</string>
+    <string name="provider_network">Network</string>
+    <string name="provider_settings">Location settings</string>
+    <string name="latitude">Ширина</string>
+    <string name="longitude">Долгота</string>
+    <string name="maptype">тип карты</string>
+    <string name="method">Метод</string>
+</resources>

@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/HW/3_course/Computer graphics/5/CG_P5/main.c
+GL/glew.h
+-
+GLFW/glfw3.h
+-
+math.h
+-
+stdio.h
+-
+stdarg.h
+-
+stddef.h
+-
+stdlib.h
+-
+sys/stat.h
+-
+fcntl.h
+-
+

@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/HW/3_course/Computer graphics/CG_P4/main.cpp
+cstdio
+-
+string
+-
+vector
+-
+cstdarg
+-
+cstddef
+-
+cstdlib
+-
+sys/stat.h
+-
+fcntl.h
+-
+GL/glew.h
+-
+GLFW/glfw3.h
+-
+assimp/Importer.hpp
+-
+assimp/postprocess.h
+-
+assimp/scene.h
+-
+glm/glm.hpp
+-
+glm/gtc/matrix_transform.hpp
+E:/HW/3_course/Computer graphics/CG_P4/glm/gtc/matrix_transform.hpp
+
