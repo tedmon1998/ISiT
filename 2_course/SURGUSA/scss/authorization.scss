@@ -1,0 +1,164 @@
+html,
+body {
+    background-color: #89817f;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+.wrabpper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    padding: 0 0 0 30px;
+    justify-content: center;
+    align-content: center;
+    grid-template-areas:
+        "form circle"
+        "forgot .";
+}
+.wrabpper__form {
+    grid-area: form;
+    z-index: 0;
+    padding: 0 25px;
+    background-color: #1d1e21;
+    border-radius: 25px;
+    input {
+        background-color: #1d1e21;
+        font-size: 20pt;
+        margin: 5px 0;
+        padding: 5px 0;
+        transition: color 0.3s;
+        color: #89817f;
+        &:hover {
+            color: rgb(221, 219, 219);
+        }
+    }
+    span {
+        display: block;
+        background-color: #89817f;
+        height: 2px;
+        width: 100%;
+        transition: background-color 0.3s;
+    }
+    &:hover {
+        span {
+            background-color: red;
+        }
+    }
+}
+
+.wrabpper__container {
+    grid-area: circle;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    &:hover {
+        .wrabpper__circle {
+            background-color: #1d1e21;
+        }
+        .circle__submit {
+            background-color: #89817f;
+            i {
+                color: red;
+            }
+        }
+    }
+}
+
+.wrabpper__circle {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    background-color: #89817f;
+    position: relative;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s;
+}
+
+.circle__submit {
+    border-radius: 50%;
+    color: #89817f;
+    width: 45px;
+    height: 45px;
+    background-color: #1d1e21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s;
+    i {
+        position: relative;
+        left: 2px;
+        transition: color 0.4s;
+        color: #89817f;
+    }
+    button {
+        background-image: none;
+        background-color: transparent;
+    }
+}
+.wrabpper__forgot {
+    grid-area: forgot;
+    margin: 10px 0 0 0;
+    justify-self: center;
+    display: flex;
+    flex-direction: row;
+    a {
+        text-decoration: none;
+        color: #1d1e21;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        margin-left: 7px;
+    }
+}
+
+@media (max-width: 455px) {
+    .wrabpper {
+        align-content: flex-start;
+        padding: 30% 0 0 30px;
+    }
+    .wrabpper__form {
+        input {
+            font-size: 15pt;
+        }
+    }
+
+    .wrabpper__forgot {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        a {
+            font-weight: 600;
+            letter-spacing: normal;
+            margin-left: 0px;
+            position: relative;
+            top: 7px;
+        }
+    }
+}
+
+@media (max-width: 355px) {
+    .wrabpper__form {
+        input {
+            font-size: 12pt;
+        }
+    }
+
+    .wrabpper__forgot {
+        margin: 20px 0 0 0;
+        a {
+            top: 14px;
+        }
+    }
+}
+
+@media (max-width: 300px) {
+    .wrabpper__form {
+        input {
+            font-size: 10pt;
+        }
+    }
+}

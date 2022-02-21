@@ -1,0 +1,205 @@
+html,
+body {
+  background-color: #89817f;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.wrabpper {
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  padding: 0 0 0 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+      grid-template-areas: "form circle" "forgot .";
+}
+
+.wrabpper__form {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: form;
+  z-index: 0;
+  padding: 0 25px;
+  background-color: #1d1e21;
+  border-radius: 25px;
+}
+
+.wrabpper__form input {
+  background-color: #1d1e21;
+  font-size: 20pt;
+  margin: 5px 0;
+  padding: 5px 0;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  color: #89817f;
+}
+
+.wrabpper__form input:hover {
+  color: #dddbdb;
+}
+
+.wrabpper__form span {
+  display: block;
+  background-color: #89817f;
+  height: 2px;
+  width: 100%;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.wrabpper__form:hover span {
+  background-color: red;
+}
+
+.wrabpper__container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: circle;
+  z-index: 1;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrabpper__container:hover .wrabpper__circle {
+  background-color: #1d1e21;
+}
+
+.wrabpper__container:hover .circle__submit {
+  background-color: #89817f;
+}
+
+.wrabpper__container:hover .circle__submit i {
+  color: red;
+}
+
+.wrabpper__circle {
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  background-color: #89817f;
+  position: relative;
+  right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+.circle__submit {
+  border-radius: 50%;
+  color: #89817f;
+  width: 45px;
+  height: 45px;
+  background-color: #1d1e21;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+
+.circle__submit i {
+  position: relative;
+  left: 2px;
+  -webkit-transition: color 0.4s;
+  transition: color 0.4s;
+  color: #89817f;
+}
+
+.circle__submit button {
+  background-image: none;
+  background-color: transparent;
+}
+
+.wrabpper__forgot {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: forgot;
+  margin: 10px 0 0 0;
+  justify-self: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.wrabpper__forgot a {
+  text-decoration: none;
+  color: #1d1e21;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-left: 7px;
+}
+
+@media (max-width: 455px) {
+  .wrabpper {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    padding: 30% 0 0 30px;
+  }
+  .wrabpper__form input {
+    font-size: 15pt;
+  }
+  .wrabpper__forgot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+  }
+  .wrabpper__forgot a {
+    font-weight: 600;
+    letter-spacing: normal;
+    margin-left: 0px;
+    position: relative;
+    top: 7px;
+  }
+}
+
+@media (max-width: 355px) {
+  .wrabpper__form input {
+    font-size: 12pt;
+  }
+  .wrabpper__forgot {
+    margin: 20px 0 0 0;
+  }
+  .wrabpper__forgot a {
+    top: 14px;
+  }
+}
+
+@media (max-width: 300px) {
+  .wrabpper__form input {
+    font-size: 10pt;
+  }
+}

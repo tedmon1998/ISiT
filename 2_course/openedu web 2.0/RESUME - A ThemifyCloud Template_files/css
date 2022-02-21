@@ -1,0 +1,40 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium Web Light'), local('TitilliumWeb-Light'), url(https://web.archive.org/web/20200221180101im_/https://fonts.gstatic.com/s/titilliumweb/v8/NaPDcZTIAOhVxoMyOr9n_E7ffGjEGIVzY4SY.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium Web Light'), local('TitilliumWeb-Light'), url(https://web.archive.org/web/20200221180101im_/https://fonts.gstatic.com/s/titilliumweb/v8/NaPDcZTIAOhVxoMyOr9n_E7ffGjEGItzYw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/*
+     FILE ARCHIVED ON 18:01:01 Feb 21, 2020 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:54:43 Jun 15, 2021.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  RedisCDXSource: 23.905
+  esindex: 0.017
+  PetaboxLoader3.datanode: 114.283 (5)
+  PetaboxLoader3.resolve: 1192.361 (2)
+  captures_list: 943.499
+  xauthn.chkprivs: 448.7
+  LoadShardBlock: 44.647 (3)
+  exclusion.robots: 548.012
+  xauthn.identify: 99.0
+  load_resource: 1465.214 (2)
+  exclusion.robots.policy: 547.997
+  CDXLines.iter: 32.505 (3)
+*/
