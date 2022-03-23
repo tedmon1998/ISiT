@@ -1,0 +1,6 @@
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\MyLibrary\bin\Debug\MyLibrary.dll
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\MyLibrary\bin\Debug\MyLibrary.pdb
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\MyLibrary\obj\Debug\MyLibrary.csproj.AssemblyReference.cache
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\MyLibrary\obj\Debug\MyLibrary.csproj.CoreCompileInputs.cache
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\MyLibrary\obj\Debug\MyLibrary.dll
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\MyLibrary\obj\Debug\MyLibrary.pdb

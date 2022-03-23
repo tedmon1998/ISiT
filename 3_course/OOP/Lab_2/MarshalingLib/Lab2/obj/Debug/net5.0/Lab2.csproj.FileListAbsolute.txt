@@ -1,0 +1,16 @@
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\bin\Debug\net5.0\Lab2.exe
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\bin\Debug\net5.0\Lab2.deps.json
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\bin\Debug\net5.0\Lab2.runtimeconfig.json
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\bin\Debug\net5.0\Lab2.runtimeconfig.dev.json
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\bin\Debug\net5.0\Lab2.dll
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\bin\Debug\net5.0\ref\Lab2.dll
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\bin\Debug\net5.0\Lab2.pdb
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\obj\Debug\net5.0\Lab2.csproj.AssemblyReference.cache
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\obj\Debug\net5.0\Lab2.GeneratedMSBuildEditorConfig.editorconfig
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\obj\Debug\net5.0\Lab2.AssemblyInfoInputs.cache
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\obj\Debug\net5.0\Lab2.AssemblyInfo.cs
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\obj\Debug\net5.0\Lab2.csproj.CoreCompileInputs.cache
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\obj\Debug\net5.0\Lab2.dll
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\obj\Debug\net5.0\ref\Lab2.dll
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\obj\Debug\net5.0\Lab2.pdb
+E:\HW\ISiT\3_course\OOP\Lab_2\MarshalingLib\Lab2\obj\Debug\net5.0\Lab2.genruntimeconfig.cache

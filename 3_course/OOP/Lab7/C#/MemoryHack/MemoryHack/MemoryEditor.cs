@@ -17,64 +17,68 @@ namespace MemoryHack
 
 
         // my cod
-        public void WriteMemory(IntPtr address, byte[] value) 
+        public void WriteMemory(IntPtr address, byte[] value, int pId) 
         {
-            IntPtr _hProcess = OpenProcess((uint)ProcessAccessFlags.All, false, _pId);
+            IntPtr _hProcess = OpenProcess((uint)ProcessAccessFlags.All, false, pId);
             IntPtr bytesWritten = IntPtr.Zero;
+
+            // WriteProcessMemory(куда пишем_дескримтоор, адрес памяти, массив записываемых байт, кол. байт, переменная получающая кол байт)
             WriteProcessMemory(_hProcess, address, value, (int)value.Length, out bytesWritten);
             CloseHandle(_hProcess);
         }
 
-        public int ReadMemory(IntPtr address, int size)
+        public int ReadMemory(IntPtr address, int size, int pId)
         {
             byte[] buffer = new byte[size];
-            IntPtr bytesread = IntPtr.Zero;
-            IntPtr _hProcess = OpenProcess((uint)ProcessAccessFlags.All, false, _pId);
 
-            ReadProcessMemory(_hProcess, address, buffer, size, out bytesread);
+            // OpenProcess(флаг доступа, параметр дискриптора наследования, ид процесса)
+            IntPtr _hProcess = OpenProcess((uint)ProcessAccessFlags.All, false, pId);
+
+            // WriteProcessMemory(куда пишем_дескримтоор, адрес памяти, указатель на буффер получающий процесс, кол. байт, переменная получающая кол байт)
+            ReadProcessMemory(_hProcess, address, buffer, size, out nint bytesread);
             CloseHandle(_hProcess);
             return BitConverter.ToInt32(buffer, 0);
         }
 
-        public int GetParentProcess()
-        {
-            _pId = 0;
-            IntPtr handleToSnapshot = IntPtr.Zero;
-            try
-            {
-                PROCESSENTRY32 procEntry = new PROCESSENTRY32();
-                procEntry.dwSize = (UInt32)Marshal.SizeOf(typeof(PROCESSENTRY32));
-                handleToSnapshot = CreateToolhelp32Snapshot((uint)SnapshotFlags.Process, 0);
-                if (Process32First(handleToSnapshot, ref procEntry))
-                {
-                    do
-                    {
-                        if (_pNmae == procEntry.szExeFile)
-                        {
-                            _pId = (int)procEntry.th32ProcessID;
-                            break;
-                        }
-                    } while (Process32Next(handleToSnapshot, ref procEntry));
-                }
-                else
-                {
-                    throw new ApplicationException(string.Format("Failed with win32 error code {0}", Marshal.GetLastWin32Error()));
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new ApplicationException("Can't get the process.", ex);
-            }
-            finally
-            {
-                // Must clean up the snapshot object!
-                CloseHandle(handleToSnapshot);
-            }
-            return _pId;
-        }
+        //public int GetParentProcess()
+        //{
+        //    _pId = 0;
+        //    IntPtr handleToSnapshot = IntPtr.Zero;
+        //    try
+        //    {
+        //        PROCESSENTRY32 procEntry = new PROCESSENTRY32();
+        //        procEntry.dwSize = (UInt32)Marshal.SizeOf(typeof(PROCESSENTRY32));
+        //        handleToSnapshot = CreateToolhelp32Snapshot((uint)SnapshotFlags.Process, 0);
+        //        if (Process32First(handleToSnapshot, ref procEntry))
+        //        {
+        //            do
+        //            {
+        //                if (_pNmae == procEntry.szExeFile)
+        //                {
+        //                    _pId = (int)procEntry.th32ProcessID;
+        //                    break;
+        //                }
+        //            } while (Process32Next(handleToSnapshot, ref procEntry));
+        //        }
+        //        else
+        //        {
+        //            throw new ApplicationException(string.Format("Failed with win32 error code {0}", Marshal.GetLastWin32Error()));
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        throw new ApplicationException("Can't get the process.", ex);
+        //    }
+        //    finally
+        //    {
+        //        // Must clean up the snapshot object!
+        //        CloseHandle(handleToSnapshot);
+        //    }
+        //    return _pId;
+        //}
 
         private string _pNmae;
-        public int _pId;
+        //public int _pId;
 
         // import library
 
@@ -171,16 +175,9 @@ namespace MemoryHack
         static extern bool ReadProcessMemory(
         IntPtr hProcess,
         IntPtr lpBaseAddress,
-        [Out, MarshalAs(UnmanagedType.AsAny)] object lpBuffer,
-        int dwSize,
-        out IntPtr lpNumberOfBytesRead);
-
-        [DllImport("kernel32.dll", SetLastError = true)]
-        static extern bool ReadProcessMemory(
-        IntPtr hProcess,
-        IntPtr lpBaseAddress,
         IntPtr lpBuffer,
         int dwSize,
         out IntPtr lpNumberOfBytesRead);
+
     }
 }

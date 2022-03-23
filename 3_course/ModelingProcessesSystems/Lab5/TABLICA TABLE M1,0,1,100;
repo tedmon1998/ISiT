@@ -1,0 +1,23 @@
+TABLICA TABLE M1,0,1,100;
+STANOK1 GENERATE (uniform(1,4,8));поступление детали на 1 станок
+    ADOPT 1;Приводим транзакт к 1 семейству
+    SEIZE stan1;Занимаем сатнок
+    ADVANCE (poisson (2,5));задержка
+    RELEASE stan1 ;Осовобождаем станок
+    TRANSFER 0.98,BRAK,SINXR1 ; Проверка на брак
+SINXR1  MATCH SINXR2; Держим для синхр. выхода
+    TRANSFER ,stanok3; Переходим на сборку
+ 
+ 
+stanok2 GENERATE (exponential(3,0,5));поступление детали на 2 станок
+    ADOPT 1;Приводим транзакт к 1 семейству
+    SEIZE stan2;Занимаем сатнок
+    ADVANCE (poisson (4,5));
+    RELEASE stan2;Осовобождаем станок
+    TRANSFER 0.96,BRAK,SINXR2 ;
+SINXR2  MATCH SINXR1;Держим для синхр. выхода
+    TRANSFER ,stanok3;Переходим на сборку
+ 
+ 
+BRAK    TERMINATE;Выкидываем брак
+

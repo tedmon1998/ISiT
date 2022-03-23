@@ -1,5 +1,5 @@
 ﻿using System;
-
+using System.Diagnostics;
 
 
 namespace MemoryHack
@@ -12,24 +12,36 @@ namespace MemoryHack
             int newValue = new();
             MemoryEditor memoryEditor = new MemoryEditor("starter.exe");
 
-            Console.WriteLine($"ID \t{memoryEditor.GetParentProcess()}\n");
+            //Process.GetProcessesByName("starter.exe");
+            var pList = Process.GetProcessesByName("starter")[0];
+            int pId = pList.Id;
+
+            Console.WriteLine($"Name \t{pList.ProcessName}\n");
+            Console.WriteLine($"ID \t{pId}\n");
 
             Console.WriteLine("Please enter address ");
-            IntPtr address = (IntPtr)0x6ee0dffb6c;
+            IntPtr address = (IntPtr)0x8d949ffd5c;
             int sizeVar = sizeof(Int32);
 
-            //Console.WriteLine($"\nResult {memoryEditor.ReadMemory(address)}");
+            //Console.WriteLine($"\nResult {memoryEditor.ReadMemory(address, sizeVar, pId)}");
 
             do
             {
-                Console.WriteLine($"\nResult {memoryEditor.ReadMemory(address, sizeVar).ToString()}\n");
+                Console.WriteLine($"\nResult {memoryEditor.ReadMemory(address, sizeVar, pId).ToString()}\n");
                 newValue = int.Parse(Console.ReadLine());
-                memoryEditor.WriteMemory(address, BitConverter.GetBytes(newValue));
-                
-                finish = char.Parse(Console.ReadLine());
-            } while(finish.Equals('g'));
+                memoryEditor.WriteMemory(address, BitConverter.GetBytes(newValue), pId);
+                try
+                {
+                    finish = char.Parse(Console.ReadLine());
+                }
+                catch
+                {
+                    Console.WriteLine("Error: please enter one symbol");
+                    finish = 'g';
+                }
+            } while (finish.Equals('g'));
 
-            Console.WriteLine($"\nResult {memoryEditor.ReadMemory(address, sizeVar)}");
+            Console.WriteLine($"\nResult {memoryEditor.ReadMemory(address, sizeVar, pId)}");
         }
     }
 }
