@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "c2b0a486-7263-44e7-8860-2861bce3b39c": {
+      "ProjectGuid": "c2b0a486-7263-44e7-8860-2861bce3b39c",
+      "DisplayName": "MemoryHack",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

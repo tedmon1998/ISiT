@@ -37,13 +37,14 @@ function App() {
      * return index of the regulation that conains this key
      */
 
-    const [key, value] = Object.entries(param)[0]
-    for (let i = 0; i < regulation.length; i++) {
-      const arrKeyRegulations = Object.keys(regulation[i])
-      if (arrKeyRegulations.findIndex(e => e == key) !== -1) {
-        const result = regulation[i]
-        regulation.splice(i, 1)
-        if (result[key] === parseInt(value)) return result
+    for (const [key, value] of Object.entries(param)) {
+      for (let i = 0; i < regulation.length; i++) {
+        const arrKeyRegulations = Object.keys(regulation[i])
+        if (arrKeyRegulations.findIndex(e => e == key) !== -1) {
+          const result = regulation[i]
+          regulation.splice(i, 1)
+          if (result[key] === parseInt(value)) return result
+        }
       }
     }
     return false
@@ -65,30 +66,34 @@ function App() {
      * returns number (index) of the regulation that contains this key(s)
     */
 
-    data_file.forEach(el => console.log(`test ${Object.keys(el)}`))
+    let obj, flag = false
+    // data_file.forEach(el => console.log(`test ${Object.keys(el)}`))
     for (let key of arrKeys) {
-      const res = Object.keys(seatchKey(key)).filter(e => e !== Object.keys(key).toString())
+      const obj_res = seatchKey(key)
+      const res = Object.keys(obj_res).filter(e => e !== Object.keys(key).toString())
 
       if (res) {
-        for (const k of res) {
-          const tk = k;
-          const ty = getType(k)
+        for (let i = 0; i < res.length; i++) {
+          // console.log(`k ${k}`);
+          // console.log(`getType(k) ${getType(k)}`);
+          if (i >= res.length) flag = true
 
-          if (getType(k) === "user") {
+          if (getType(res[i]) === "user") {
+            flag ? obj = { user: res[i], onj: obj_res } : obj = { user: res[i] }
             setNewVar(
               <div className="center">
                 <h1>Ответьте пожалуйста на вопрос</h1>
-                <h3>{k}</h3>
+                <h3>{res[i]}</h3>
                 <h2 className="abTitle">
                   <input placeholder={"введите ответ"} ref={inputAnswer} />
-                  <button onClick={() => calculate({ user: k })} >+</button>
+                  <button onClick={() => calculate(obj)} >+</button>
                 </h2>
               </div>
             )
           }
           else {
-            console.log(`res ${k} ${res[k]}`)
-            calculate({ app: { [k]: res[k] } })
+            flag ? obj = { app: { [res[i]]: obj_res[res[i]] }, obj: obj_res } : obj = { app: { [res[i]]: obj_res[res[i]] } }
+            calculate(obj)
           }
           break
         }
@@ -102,7 +107,7 @@ function App() {
     const val = params.user ? inputAnswer.current.value : params.app ? Object.values(params.app) : inputValue.current.value
 
     console.clear()
-    data_file.push({ [ab]: val })
+    !params.obj && data_file.push({ [ab]: val })
 
     const typ = params.user ? "user" : params.app ? "app" : "default"
 
@@ -119,10 +124,10 @@ function App() {
     }
 
 
-
-    newAnsewerDefault.length >= 1 && searchRegulations(data_file)
+    newAnsewerDefault.length >= 1 && (params.obj ? searchRegulations(params.obj) : searchRegulations(data_file))
     !params && (inputAb.current.value = "")
     params.user ? inputAnswer.current.value = "" : !params.app && (inputValue.current.value = "")
+
   }
 
 
