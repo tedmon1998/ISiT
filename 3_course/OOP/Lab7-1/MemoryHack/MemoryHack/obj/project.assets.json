@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\HW\\ISiT\\3_course\\OOP\\7\\Lab7-1\\MemoryHack\\MemoryHack\\MemoryHack.csproj",
+      "projectUniqueName": "E:\\HW\\ISiT\\3_course\\OOP\\Lab7-1\\MemoryHack\\MemoryHack\\MemoryHack.csproj",
       "projectName": "MemoryHack",
-      "projectPath": "E:\\HW\\ISiT\\3_course\\OOP\\7\\Lab7-1\\MemoryHack\\MemoryHack\\MemoryHack.csproj",
+      "projectPath": "E:\\HW\\ISiT\\3_course\\OOP\\Lab7-1\\MemoryHack\\MemoryHack\\MemoryHack.csproj",
       "packagesPath": "C:\\Users\\edmon\\.nuget\\packages\\",
-      "outputPath": "E:\\HW\\ISiT\\3_course\\OOP\\7\\Lab7-1\\MemoryHack\\MemoryHack\\obj\\",
+      "outputPath": "E:\\HW\\ISiT\\3_course\\OOP\\Lab7-1\\MemoryHack\\MemoryHack\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

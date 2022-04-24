@@ -1,0 +1,42 @@
+DetailCount equ 450
+DetailContainerSize equ (450#7)
+MoveRoboArmTime equ 4
+MakePressTime equ 1.2
+NextPortionWaitingTime equ 12
+ReloadPruTime equ 140
+
+generate ,,,1
+NEXT_PORTION	split (DetailCount-1)
+
+queue prmlQ
+seize prml
+queue prsQ; отсчет времени изготовления детали
+depart prmlQ
+advance MoveRoboArmTime
+seize press
+release prml
+advance MakePressTime
+seize prm2
+release press
+depart prsQ; деталь готова
+savevalue DetailComplite+,1
+advance MoveRoboArmTime
+seize pru
+release prm2
+advance 0
+savevalue CurrentContainerSize+,1
+
+test e Q$prmlQ,0,CHECK_CONTAINER
+advance NextPortionWaitingTime; znu
+split 1,NEXT_PORTION
+
+CHECK_CONTAINER		test e DetailContainerSize,x$CurrentContainerSize,OUT
+advance ReloadPruTime; pru
+savevalue CurrentContainerSize,0
+
+OUT 	release pru
+terminate
+
+generate (3#60#8#0.9)
+terminate 1
+start 1

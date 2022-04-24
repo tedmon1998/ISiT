@@ -45,8 +45,7 @@ namespace MemoryHack
 
             foreach (int i in offsets)
             {
-                ReadProcessMemory(_process, ptr, buffer, buffer.Length, out
-                var read);
+                ReadProcessMemory(_process, ptr, buffer, buffer.Length, out var read);
                 ptr = (_size == 4) ? IntPtr.Add(new IntPtr(BitConverter.ToInt32(buffer, 0)), i) : ptr = IntPtr.Add(new IntPtr(BitConverter.ToInt64(buffer, 0)), i);
             }
             // можно то, что выше переписать ptr = IntPtr.Add(new IntPtr(BitConverter.ToInt64(buffer, 0)), 0x31C);

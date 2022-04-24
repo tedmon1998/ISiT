@@ -1,0 +1,68 @@
+DetailCount equ 400
+DetailContainerSize equ (400#7)
+MoveRoboArmTime equ 3.5
+MakePressTime equ 1.5
+NextPortionWaitingTime equ 15
+ReloadPruTime equ 160
+
+generate ,,,1SIMULATE
+VAR		VARIABLE 7000/450
+		GENERATE ,,,1
+		ASSIGN 1,4608000
+MET1	SEIZE PRM
+		ADVANCE 400
+		RELEASE PRM
+МET2	SAVEVALUE 1+, 1
+		ТEST X1,450, MET 3
+		SEIZE ZNU
+		ADVANCE 1200; Продолжительность поворота загрузочного устройства 
+		ADVANCE 14000; перегрузка приемного устройства после его заполнения 
+		RELEASE РRU
+		SAVEVALUE 3,0; смены
+		TRANSFER,MET 1
+MET3	SEIZE РRМ
+		ADVANCE 400; Продолжительность цикла работы манипулятора 
+		RELEASE PRM
+		SEIZE PRESS
+		ADVANCE V$VAR
+		RELEASE РRESS
+		TEST LE M1, P1, MET 4
+		TRANSFER , MET 2
+MET4	TERMINATE 1
+		START 1 
+		END
+
+NEXT_PORTION	split (DetailCount-1)
+
+queue prmlQ
+seize prml
+queue prsQ; отсчет времени изготовления детали
+depart prmlQ
+advance MoveRoboArmTime
+seize press
+release prml
+advance MakePressTime
+seize prm2
+release press
+depart prsQ; деталь готова
+savevalue DetailComplite+,1
+advance MoveRoboArmTime
+seize pru
+release prm2
+advance 0
+savevalue CurrentContainerSize+,1
+
+test e Q$prmlQ,0,CHECK_CONTAINER
+advance NextPortionWaitingTime; znu
+split 1,NEXT_PORTION
+
+CHECK_CONTAINER		test e DetailContainerSize,x$CurrentContainerSize,OUT
+advance ReloadPruTime; pru
+savevalue CurrentContainerSize,0
+
+OUT 	release pru
+terminate
+
+generate (2#60#8#0.9)
+terminate 1
+start 1
