@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.10">
+	<Item id="7abd4911-5151-48f3-a6cc-d8adc2f978eb">
+		<Name>Баскетбольный</Name>
+		<Code>000000002</Code>
+		<Description>Баскетбольный зал</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="fd0fb865-6a73-4b76-bead-bab2ce42a175">
+		<Name>Футбольный</Name>
+		<Code>000000001</Code>
+		<Description>Футбольный зал</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="29a2df83-d604-4e3e-8e3f-f929e297c9c3">
+		<Name>Хоккейный</Name>
+		<Code>000000003</Code>
+		<Description>Хоккейный зал</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>
