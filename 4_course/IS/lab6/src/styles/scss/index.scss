@@ -1,0 +1,128 @@
+body {
+    cursor: default;
+}
+.top-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+h2 {
+    cursor: pointer;
+}
+
+.fio {
+    text-align: right;
+    h2 {
+        cursor: default;
+    }
+}
+
+.input__key__block {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.wrapper {
+    padding: 20px 50px;
+}
+
+.container__top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content {
+    margin-top: 40px;
+    padding: 0 40px;
+}
+span {
+    right: 0px;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    background-color: rgb(88, 88, 88);
+    
+}
+
+.textarea {
+    resize: vertical;
+}
+
+.input {
+    margin-bottom: 5px;
+}
+
+.but {
+    background-color: black;
+    color: white;
+    padding: 0 20px;
+    border-radius: 30px;
+}
+
+.container__bottom {
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.next__button__1{
+    width: 50%;
+    display: grid;
+    align-content: center;
+}
+
+.next__button__2 {
+    width: 100%;
+    display: grid;
+    align-content: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.next__rigth, .next__left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    height: 40px;
+}
+
+.next__rigth {
+justify-self: end;
+}
+
+.next__left {
+justify-self: start;
+}
+
+.container__inputs {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    color: rgb(27, 138, 7);
+    text-align: center;
+    h2 {
+            cursor: default;
+        }
+}
+
+input {
+    font-size: 14pt;
+    padding: 10px 7px;
+    border: 2px dashed gray;
+}
+
+textarea {
+    font-size: 14pt;
+    padding: 10px 7px;
+}

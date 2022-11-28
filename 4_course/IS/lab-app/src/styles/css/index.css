@@ -1,0 +1,165 @@
+body {
+  cursor: default;
+}
+
+.top-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+h2 {
+  cursor: pointer;
+}
+
+.fio {
+  text-align: right;
+}
+
+.fio h2 {
+  cursor: default;
+}
+
+.input__key__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.wrapper {
+  padding: 20px 50px;
+}
+
+.container__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content {
+  margin-top: 40px;
+  padding: 0 40px;
+}
+
+span {
+  right: 0px;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background-color: #585858;
+}
+
+.textarea {
+  resize: vertical;
+}
+
+.input {
+  margin-bottom: 5px;
+}
+
+.but {
+  background-color: black;
+  color: white;
+  padding: 0 20px;
+  border-radius: 30px;
+}
+
+.container__bottom {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.next__button__1 {
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.next__button__2 {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+}
+
+.next__rigth, .next__left {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  background-color: black;
+  border-radius: 30px;
+  color: white;
+  height: 40px;
+}
+
+.next__rigth {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+.next__left {
+  -ms-grid-column-align: start;
+      justify-self: start;
+}
+
+.container__inputs {
+  margin-top: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.logo {
+  color: #1b8a07;
+  text-align: center;
+}
+
+.logo h2 {
+  cursor: default;
+}
+
+input {
+  font-size: 14pt;
+  padding: 10px 7px;
+  border: 2px dashed gray;
+}
+
+textarea {
+  font-size: 14pt;
+  padding: 10px 7px;
+}

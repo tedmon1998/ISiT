@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Лабораторная работа № 3</title>
+</head>
+
+<body>
+    <div>
+        <div class="container__top">
+            <div class="cipher but" id="cipher">
+                <h2>зашифровать</h2>
+            </div>
+            <div class="logo" id="logo">
+                <h2>TEG</h2>
+            </div>
+            <div class="decipher but" id="decipher">
+                <h2>расшифровать</h2>
+            </div>
+        </div>
+        <div class="container__inputs">
+            <div class="input__key__block">
+                <input type="text" style="border: rgb(0, 140, 0) 2px dotted" placeholder="введите открытый ключ..." id="open_key" class="input" />
+                <input type="text" style="border: rgb(146, 3, 3) 2px dotted" placeholder="введите закрытый ключ..." id="close_key" class="input" />
+            </div>
+            <input type="text" placeholder="введите текст..." id="text" class="input" />
+            <textarea type="text" id="result" class="textarea" placeholder="Пока пусто..." readonly></textarea>
+        </div>
+        <div class="container__bottom">
+            <div class="next__button__2">
+                <div class="next__left" id="previous">
+                    <h2>← лаб. 3.2</h2>
+                </div>
+                <div class="next__rigth" id="next">
+                    <h2>лаб. 5 →</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/js/lab4.js"></script>
+</body>
+
+</html>
